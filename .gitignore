@@ -11,7 +11,7 @@ logs/
 
 # Specific files #
 ##################
-projectname/settings.py
+fitnesscalc/fitnesscalc/settings.py
 
 # OS generated files #
 ######################
