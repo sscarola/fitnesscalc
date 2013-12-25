@@ -1,0 +1,15 @@
+<html>
+  
+  <head>
+    <title>FitnessCalculator</title>
+  </head>
+  
+  <body>
+    <a href="{% url "django.contrib.auth.views.login" %}?next={{request.path}}">Login</a>
+    <a href="{% url "accounts.views.register" %}?next={{request.path}}">Register</a>
+    <div id="content">
+      {% block content %}Test{% endblock content %}
+    </div>
+  </body>
+
+</html>

@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 from settings_default import *
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -55,6 +55,7 @@ ROOT_URLCONF = 'fitnesscalc.urls'
 
 WSGI_APPLICATION = 'fitnesscalc.wsgi.application'
 
+LOGIN_REDIRECT_URL = 'profiles.views.home'
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
